@@ -1,0 +1,10 @@
+#include<stdio.h>
+int Dora()
+{
+    printf("vaishnavi\n");
+    printf ("sanika\n");
+}
+int main()
+{
+    Dora();
+}
