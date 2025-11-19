@@ -1,0 +1,23 @@
+#include <stdio.h>
+int factorial(int n) {
+    int fact = 1;
+    for(int i = 1; i <= n; i++) {
+        fact = fact * i;
+    }
+    return fact;
+}
+int main() {
+    int a[10], n;
+    printf("Enter how many elements: ");
+    scanf("%d", &n);
+
+    printf("Enter %d elements:\n", n);
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+    printf("\nFactorial of each element:\n");
+    for(int i = 0; i < n; i++) {
+        printf("Factorial of %d = %d\n", a[i], factorial(a[i]));
+    }
+    return 0;
+}
