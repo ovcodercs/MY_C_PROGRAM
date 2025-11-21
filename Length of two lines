@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    float a1, b1, a2, b2, distance;
+    printf ("enter a1 and b1");
+    scanf("%f%f",&a1,&b1);
+    printf("enter a2 and b2");
+    scanf("%f%f",&a2,&b2);
+    distance=sqrt((a2-a1)*(a2-a1))+((b2-b1)*(b2-b1));
+    printf ("the straight line distance is:%.2f\n",distance);
+    return 0;
+}
