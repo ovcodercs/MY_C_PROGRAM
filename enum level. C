@@ -1,0 +1,16 @@
+#include <stdio.h>
+enum Level {
+    HALF,
+    MEDIUM,
+    LOW, 
+};
+int main() {
+    enum Level l;
+    l = HALF;
+    printf("Selected level HALF (%d)\n", l);
+    l = MEDIUM;
+    printf("Selected level MEDIUM (%d)\n", l);
+    l = LOW;
+    printf("Selected level LOW (%d)\n", l);
+    return 0;
+}
