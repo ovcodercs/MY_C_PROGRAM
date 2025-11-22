@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() {
+    char vaishnavi[50], rathod[50], fullName[100];
+    int i, j, length = 0;
+    printf("Enter first name: ");
+    scanf("%s", vaishnavi);
+    printf("Enter last name: ");
+    scanf("%s", rathod);
+    for(i = 0; vaishnavi[i] != '\0'; i++) {
+        fullName[i] = vaishnavi[i];
+        length++;
+    }
+    fullName[i] = ' ';
+    i++;
+    length++;
+    for(j = 0; rathod[j] != '\0'; j++, i++) {
+        vaishnavi[i] = rathod[j];
+        length++;
+    }
+    fullName[i] = '\0';
+    printf("Full Name: %s\n", fullName);
+    printf("Length of Full Name: %d\n", length);
+    if(length > 20) {
+        printf(" Full name \n");
+    } else {
+        printf("Full name fits on screen.\n");
+    }
+}
